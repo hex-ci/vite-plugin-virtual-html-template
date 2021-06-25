@@ -77,7 +77,7 @@ The URL structure after the project is constructed is the same as that during de
 * http://domain.com/app.html
 * http://domain.com/sub/other.html
 
-for MPA: The `key` of `pages` and the `build.rollupOptions.input` are associated with the following rules:
+for MPA, The `key` of `pages` and the `build.rollupOptions.input` are associated with the following rules:
 
 ```js
 {

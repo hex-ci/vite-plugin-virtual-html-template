@@ -1,9 +1,8 @@
 {
   "name": "vite-plugin-virtual-html-template",
   "version": "1.0.3",
-  "description": "",
+  "description": "HTML template for vite app, support flexible virtual URL.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

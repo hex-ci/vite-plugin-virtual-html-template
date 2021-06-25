@@ -1,6 +1,6 @@
-import path from 'path';
-import { promises as fs } from 'fs';
-import { template } from 'lodash';
+const path = require('path');
+const { promises: fs } = require('fs');
+const { template } = require('lodash');
 
 const resolve = (p) => path.resolve(process.cwd(), p);
 const relative = (p) => path.relative(process.cwd(), p);
@@ -112,4 +112,4 @@ const virtualHtmlTemplatePlugin = (options) => {
   }
 }
 
-export default virtualHtmlTemplatePlugin;
+module.exports = virtualHtmlTemplatePlugin;

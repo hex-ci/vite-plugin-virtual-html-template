@@ -1,0 +1,27 @@
+{
+  "name": "vite-plugin-virtual-html-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hex-ci/vite-plugin-virtual-html-template.git"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "html"
+  ],
+  "author": "Hex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hex-ci/vite-plugin-virtual-html-template/issues"
+  },
+  "homepage": "https://github.com/hex-ci/vite-plugin-virtual-html-template#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

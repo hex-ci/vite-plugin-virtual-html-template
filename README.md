@@ -8,8 +8,7 @@ The idea and part of the code for this plugin comes from vite-plugin-html-templa
 
 - Vite need html for entry file, which means we must have
   - projectRoot/index.html for SPA
-  - projectRoot/app1.html, projectRoot/app2.html for MPA
-  - projectRoot/src/pages/*/index.html for MPA
+  - projectRoot/app1.html, projectRoot/app2.html, projectRoot/sub/page/app3.html for MPA
 - Why not we use html template for all entry html
 - Also we should support lodash.template syntax for the html content, like setting `<title></title>`.
 

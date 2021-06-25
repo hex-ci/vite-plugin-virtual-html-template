@@ -76,3 +76,19 @@ The URL structure after the project is constructed is the same as that during de
 * http://domain.com/index.html
 * http://domain.com/app.html
 * http://domain.com/sub/other.html
+
+for MPA: The `key` of `pages` and the `build.rollupOptions.input` are associated with the following rules:
+
+```js
+{
+  build: {
+    rollupOptions: {
+      input: {
+        app1: path.resolve(__dirname, `${key}.html`), // key is `index`
+        app1: path.resolve(__dirname, `${key}.html`), // key is `app`
+        app2: path.resolve(__dirname, `${key}.html`), // key is `sub/other`
+      }
+    }
+  }
+}
+```

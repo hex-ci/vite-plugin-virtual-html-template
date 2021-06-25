@@ -4,7 +4,7 @@
 
 HTML template for vite app, support flexible virtual URL.
 
-The idea and part of the code for this plugin comes from vite-plugin-html-template.
+The idea and part of the code for this plugin comes from [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template).
 
 ## Motivation
 

@@ -21,7 +21,7 @@ npm i --save-dev vite-plugin-virtual-html-template
 ```
 
 ```js
-// vite.config.ts
+// vite.config.js
 import virtualHtmlTemplate from 'vite-plugin-virtual-html-template'
 
 // @see https://vitejs.dev/config/

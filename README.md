@@ -63,6 +63,8 @@ export default defineConfig({
 }
 ```
 
+The `key` of `pages` and the URL are associated with the following rules: `http://127.0.0.1/${key}.html`, where `key` supports multi-level paths.
+
 After starting the dev server, browse:
 
 * http://127.0.0.1/index.html : Use `public/index.html` as the template and `src/main.js` as the entry.

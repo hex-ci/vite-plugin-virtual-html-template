@@ -1,0 +1,1 @@
+# vite-plugin-virtual-html-template

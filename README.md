@@ -1,5 +1,7 @@
 # vite-plugin-virtual-html-template
 
+[![npm version](https://badgen.net/npm/v/vite-plugin-virtual-html-template)](https://www.npmjs.com/package/vite-plugin-virtual-html-template)
+
 HTML template for vite app, support flexible virtual URL.
 
 The idea and part of the code for this plugin comes from vite-plugin-html-template.

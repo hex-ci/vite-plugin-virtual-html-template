@@ -4,8 +4,6 @@
 
 HTML template for vite app, support flexible virtual URL.
 
-The idea and part of the code for this plugin comes from [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template).
-
 ## Motivation
 
 - Vite need html for entry file, which means we must have
@@ -92,3 +90,7 @@ For MPA, The `key` of `pages` and the `build.rollupOptions.input` are associated
   }
 }
 ```
+
+## Thanks
+
+The idea and part of the code for this plugin comes from [vite-plugin-html-template](https://github.com/IndexXuan/vite-plugin-html-template).

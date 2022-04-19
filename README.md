@@ -41,6 +41,7 @@ export default defineConfig({
     index: {
       template: 'public/index.html',
       title: 'Home Page',
+      // If entry is not set, the entry will not be added to the HTML.
       entry: 'src/main.js'
     },
     app: {
@@ -61,13 +62,13 @@ export default defineConfig({
 }
 ```
 
-The `key` of `pages` and the URL are associated with the following rules: `http://127.0.0.1/${key}.html`, where `key` supports multi-level paths.
+The `key` of `pages` and the URL are associated with the following rules: `http://127.0.0.1/${key}` (history router mode) or `http://127.0.0.1/${key}.html`, where `key` supports multi-level paths.
 
 After starting the dev server, browse:
 
 * http://127.0.0.1/index.html : Use `public/index.html` as the template and `src/main.js` as the entry.
 * http://127.0.0.1/app.html : Use `public/index.html` as the template and `src/app/main.js` as the entry.
-* http://127.0.0.1/sub/other.html : Use `public/index.html` as the template and `src/sub/other/main.js` as the entry.
+* http://127.0.0.1/sub/other.html or http://127.0.0.1/sub/other (history router mode): Use `public/index.html` as the template and `src/sub/other/main.js` as the entry.
 
 The URL structure after the project is constructed is the same as that during development:
 

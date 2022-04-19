@@ -19,10 +19,14 @@ const getHtmlContent = async (payload) => {
   catch (e) {
     console.error(e)
   }
-  content = content.replace(
-    '</body>',
-    `  <script type="module" src="/${pageEntry}"></script>\n</body>`
-  )
+
+  if (pageEntry) {
+    content = content.replace(
+      '</body>',
+      `  <script type="module" src="/${pageEntry}"></script>\n</body>`
+    )
+  }
+
   const compiled = template(content)
   const context = {
     title: pageTitle,
@@ -31,6 +35,7 @@ const getHtmlContent = async (payload) => {
   const html = compiled({
     ...context
   })
+
   return html
 }
 
@@ -41,12 +46,8 @@ const virtualHtmlTemplatePlugin = (options) => {
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         const url = req._parsedUrl.pathname;
-
-        if (path.extname(url) !== '.html' && url !== '/') {
-          return next()
-        }
-
         let pageName;
+
         if (url === '/') {
           pageName = 'index';
         }
@@ -65,7 +66,7 @@ const virtualHtmlTemplatePlugin = (options) => {
 
         const content = await getHtmlContent({
           templatePath,
-          pageEntry: page.entry || 'main',
+          pageEntry: page.entry,
           pageTitle: page.title || 'Home Page',
           data: options.data
         });

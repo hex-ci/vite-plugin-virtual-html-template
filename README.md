@@ -84,8 +84,8 @@ For MPA, The `key` of `pages` and the `build.rollupOptions.input` are associated
     rollupOptions: {
       input: {
         app1: path.resolve(__dirname, `index.html`), // The file name is associated with `pages.index` after removing the extension.
-        app1: path.resolve(__dirname, `app.html`), // The file name is associated with `pages.app` after removing the extension.
-        app2: path.resolve(__dirname, `sub/other.html`), // The file name is associated with `pages['sub/other']` after removing the extension.
+        app2: path.resolve(__dirname, `app.html`), // The file name is associated with `pages.app` after removing the extension.
+        app3: path.resolve(__dirname, `sub/other.html`), // The file name is associated with `pages['sub/other']` after removing the extension.
       }
     }
   }
